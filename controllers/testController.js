@@ -5,6 +5,6 @@ export const testUserController = (req, res) => {
             message: 'test user DATA API',
         })
     }catch(error){
-        console.log('error in TEST API', error)
+        console.log('error in TEST Api', error)
     }
 }

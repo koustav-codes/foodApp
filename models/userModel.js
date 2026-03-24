@@ -26,7 +26,7 @@ const userSchema = new mongoose.Schema(
         type: String,
         required: [true, 'user type is required'],
         default: 'client',
-        enum: ['client', 'admin', 'vendor', 'security']
+        enum: ['client', 'admin', 'vendor', 'guard']
     },
     profile: {
         type: String,
@@ -34,7 +34,7 @@ const userSchema = new mongoose.Schema(
     },
     answer: {
         type: String,
-        required:[true,'Answer is Required']
+        required:[true,'Answer is Required, or else not work']
     }
 },
 { timestamps: true }
